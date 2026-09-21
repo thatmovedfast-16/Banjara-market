@@ -1,2 +1,180 @@
-# Banjara-market
-Banjara Market furniture storefront with multi-page navigation and responsive design
+export const categories = [
+  {
+    slug: 'living-room',
+    name: 'Living Room',
+    label: 'Relaxed luxury',
+    description: 'Statement sofas, accent chairs, and inviting storage for everyday comfort.',
+    count: 89,
+    image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    slug: 'bedroom',
+    name: 'Bedroom',
+    label: 'Sleep in style',
+    description: 'Elegant beds, wardrobes, and warm textures for restful nights.',
+    count: 71,
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    slug: 'dining',
+    name: 'Dining',
+    label: 'Gather beautifully',
+    description: 'Dining tables and seating designed for shared meals and celebrations.',
+    count: 63,
+    image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    slug: 'storage',
+    name: 'Storage',
+    label: 'Organised living',
+    description: 'Functional cabinets and smart storage solutions to reduce clutter.',
+    count: 55,
+    image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    slug: 'decor',
+    name: 'Decor',
+    label: 'Home styling',
+    description: 'Thoughtful accents and designer details that bring warmth to rooms.',
+    count: 112,
+    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80',
+  },
+];
+
+export const products = [
+  {
+    id: 'coco-sofa',
+    name: 'Coco 3-Seater Sofa',
+    category: 'living-room',
+    categoryLabel: 'Living Room',
+    image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80',
+    price: 39999,
+    originalPrice: 49999,
+    badge: 'New',
+    ratingCount: 420,
+    description:
+      'A plush modern sofa with deep seating and premium upholstery for cozy family evenings.',
+    features: ['Solid wood frame', 'Premium fabric', '2-year warranty'],
+  },
+  {
+    id: 'harbor-dining',
+    name: 'Harbor Dining Set',
+    category: 'dining',
+    categoryLabel: 'Dining',
+    image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80',
+    price: 28500,
+    originalPrice: 35900,
+    badge: 'Hot',
+    ratingCount: 368,
+    description:
+      'Warm wood-toned dining with a modern silhouette made for intimate dinners and lively gathering.',
+    features: ['Engineered wood', '4-seater layout', 'Compact footprint'],
+  },
+  {
+    id: 'velvet-bed',
+    name: 'Velvet Queen Bed',
+    category: 'bedroom',
+    categoryLabel: 'Bedroom',
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80',
+    price: 44900,
+    originalPrice: 59999,
+    badge: 'Top Rated',
+    ratingCount: 512,
+    description:
+      'A luxurious upholstered bed frame with soft texture and elevated cushioning for ultimate comfort.',
+    features: ['Upholstered headboard', 'Space-saving storage', 'Easy assembly'],
+  },
+  {
+    id: 'oak-cabinet',
+    name: 'Oak Storage Cabinet',
+    category: 'storage',
+    categoryLabel: 'Storage',
+    image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80',
+    price: 18299,
+    originalPrice: 24199,
+    badge: 'Best Value',
+    ratingCount: 291,
+    description:
+      'Smart, sleek storage designed for layered organization without compromising on style.',
+    features: ['Soft-close hinges', 'Moisture resistant', 'Compact design'],
+  },
+  {
+    id: 'atlas-chair',
+    name: 'Atlas Accent Chair',
+    category: 'decor',
+    categoryLabel: 'Decor',
+    image: 'https://images.unsplash.com/photo-1512212621149-107ffe572d2f?auto=format&fit=crop&w=900&q=80',
+    price: 14999,
+    originalPrice: 18999,
+    badge: 'Fresh',
+    ratingCount: 272,
+    description:
+      'A modern accent chair with sculpted lines and cozy seating for reading corners and lounges.',
+    features: ['Premium weave', 'Comfort cushioning', 'Accent-ready'],
+  },
+  {
+    id: 'skyline-table',
+    name: 'Skyline Console Table',
+    category: 'living-room',
+    categoryLabel: 'Living Room',
+    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80',
+    price: 23999,
+    originalPrice: 28999,
+    badge: 'Popular',
+    ratingCount: 198,
+    description:
+      'Clean-lined console for entryways and living spaces, pairing elegance with practical display storage.',
+    features: ['Minimal profile', 'Display shelf', 'Solid build'],
+  },
+  {
+    id: 'sora-wardrobe',
+    name: 'Sora Wardrobe',
+    category: 'bedroom',
+    categoryLabel: 'Bedroom',
+    image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80',
+    price: 52999,
+    originalPrice: 64999,
+    badge: 'Limited',
+    ratingCount: 134,
+    description:
+      'A modern wardrobe with generous storage and smooth sliding doors for a refined bedroom layout.',
+    features: ['Sliding doors', 'Soft-close finish', 'Ample capacity'],
+  },
+  {
+    id: 'terra-lamp',
+    name: 'Terra Table Lamp',
+    category: 'decor',
+    categoryLabel: 'Decor',
+    image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=900&q=80',
+    price: 3999,
+    originalPrice: 5799,
+    badge: 'New',
+    ratingCount: 186,
+    description:
+      'A warm ambient lamp that adds a cozy glow to reading corners, bedside tables, and living spaces.',
+    features: ['Warm lighting', 'Soft-touch finish', 'Compact size'],
+  },
+];
+
+export const reviews = [
+  {
+    name: 'Aisha S.',
+    location: 'Delhi',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80',
+    quote: 'The quality is excellent and the finish feels premium. Delivery was on time and our living room looks incredible.',
+  },
+  {
+    name: 'Rohan M.',
+    location: 'Mumbai',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
+    quote: 'We redecorated our bedroom and chose the whole set from here. The design team really helped us choose the perfect combination.',
+  },
+  {
+    name: 'Neha G.',
+    location: 'Bengaluru',
+    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80',
+    quote: 'Stylish, durable, and surprisingly affordable. It feels like a boutique furniture brand without the huge price tag.',
+  },
+];
+
+export default { categories, products, reviews };
